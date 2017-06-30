@@ -67,6 +67,7 @@ figure {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
+  -webkit-box-sizing: content-box;
   box-sizing: content-box;
   /* 1 */
   height: 0;
@@ -290,6 +291,7 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   color: inherit;
@@ -325,6 +327,7 @@ textarea {
  */
 [type="checkbox"],
 [type="radio"] {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -403,6 +406,7 @@ template {
   display: none; }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -414,8 +418,12 @@ body {
   position: relative;
   width: 110px;
   height: 190px;
-  background-color: #C6C7C6;
-  margin: 108px auto; }
+  background-image: -webkit-repeating-linear-gradient(left, #929191, #f7f6f2 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+  background-image: -o-repeating-linear-gradient(left, #929191, #f7f6f2 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+  background-image: repeating-linear-gradient(to right, #929191, #f7f6f2 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+  margin: 108px auto;
+  border-bottom-left-radius: 12px 39px;
+  border-bottom-right-radius: 12px 39px; }
   .microphone .head {
     position: absolute;
     top: -50px;
@@ -424,8 +432,11 @@ body {
     width: 100px;
     height: 90px;
     border-radius: 50% 50% 0 0;
+    background: -webkit-linear-gradient(45deg, #ECE7E5 10%, transparent 0%, transparent 90%, #ECE7E5 0%), -webkit-linear-gradient(315deg, transparent 40%, #D2CFCC 0%, #D2CFCC 60%, transparent 0%), -webkit-linear-gradient(45deg, transparent 40%, #ECE7E5 0%, #ECE7E5 60%, transparent 0%) #6D6875;
+    background: -o-linear-gradient(45deg, #ECE7E5 10%, transparent 0%, transparent 90%, #ECE7E5 0%), -o-linear-gradient(315deg, transparent 40%, #D2CFCC 0%, #D2CFCC 60%, transparent 0%), -o-linear-gradient(45deg, transparent 40%, #ECE7E5 0%, #ECE7E5 60%, transparent 0%) #6D6875;
     background: linear-gradient(45deg, #ECE7E5 10%, transparent 0%, transparent 90%, #ECE7E5 0%), linear-gradient(135deg, transparent 40%, #D2CFCC 0%, #D2CFCC 60%, transparent 0%), linear-gradient(45deg, transparent 40%, #ECE7E5 0%, #ECE7E5 60%, transparent 0%) #6D6875;
     background-size: .5em .5em;
+    -webkit-box-shadow: inset -0.2em 0 0 0 rgba(109, 104, 117, 0.3), inset 0.25em 0 0 0 rgba(236, 231, 229, 0.5);
     box-shadow: inset -0.2em 0 0 0 rgba(109, 104, 117, 0.3), inset 0.25em 0 0 0 rgba(236, 231, 229, 0.5); }
   .microphone .ring {
     position: absolute;
@@ -433,10 +444,43 @@ body {
     left: 50%;
     width: 115px;
     height: 15px;
+    background-image: -webkit-repeating-linear-gradient(bottom, #929191, #f7f6f2 40%, #f7f6f2 50%, #f7f6f2 69%, #929191 100%);
+    background-image: -o-repeating-linear-gradient(bottom, #929191, #f7f6f2 40%, #f7f6f2 50%, #f7f6f2 69%, #929191 100%);
     background-image: repeating-linear-gradient(to top, #929191, #f7f6f2 40%, #f7f6f2 50%, #f7f6f2 69%, #929191 100%);
+    -webkit-box-shadow: inset 3px 0px 3px rgba(0, 0, 0, 0.25), inset -2px 0px 3px rgba(0, 0, 0, 0.25);
     box-shadow: inset 3px 0px 3px rgba(0, 0, 0, 0.25), inset -2px 0px 3px rgba(0, 0, 0, 0.25);
     border-radius: 45px 45px 10px 10px / 60px 60px 10px 10px;
     margin-left: -57.5px; }
+    .microphone .ring .shadow_1 {
+      height: 1px;
+      width: 6px;
+      -webkit-box-shadow: 50px 2px 1px 0px black;
+      box-shadow: 50px 2px 1px 0px black; }
+    .microphone .ring .shadow_2 {
+      height: 1px;
+      width: 6px;
+      -webkit-box-shadow: 50px 11px 1px 0px black;
+      box-shadow: 50px 11px 1px 0px black; }
+    .microphone .ring .shadow_3 {
+      height: 1px;
+      width: 9px;
+      -webkit-box-shadow: 7px 10px 2px 0px black;
+      box-shadow: 7px 10px 2px 0px black; }
+    .microphone .ring .shadow_4 {
+      height: 1px;
+      width: 9px;
+      -webkit-box-shadow: 10px 0px 2px 0px black;
+      box-shadow: 10px 0px 2px 0px black; }
+    .microphone .ring .shadow_5 {
+      height: 1px;
+      width: 9px;
+      -webkit-box-shadow: 97px -1px 2px 0px black;
+      box-shadow: 97px -1px 2px 0px black; }
+    .microphone .ring .shadow_6 {
+      height: 1px;
+      width: 9px;
+      -webkit-box-shadow: 99px 7px 2px 0px black;
+      box-shadow: 99px 7px 2px 0px black; }
   .microphone:after {
     content: '';
     position: absolute;
@@ -445,7 +489,8 @@ body {
     background: transparent;
     top: -15px;
     left: 30%;
-    box-shadow: 20px 1px 14px 4px white; }
+    -webkit-box-shadow: 30px 1px 14px 4px white;
+    box-shadow: 30px 1px 14px 4px white; }
   .microphone:before {
     content: '';
     z-index: 1;
@@ -455,7 +500,96 @@ body {
     background: transparent;
     top: -15px;
     left: 30%;
+    -webkit-box-shadow: 3px 1px 14px 4px white;
     box-shadow: 3px 1px 14px 4px white; }
+  .microphone .btm_ring1 {
+    width: 85px;
+    height: 5px;
+    background-image: -webkit-repeating-linear-gradient(left, #929191, #eaeaea 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+    background-image: -o-repeating-linear-gradient(left, #929191, #eaeaea 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+    background-image: repeating-linear-gradient(to right, #929191, #eaeaea 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -42.5px;
+    border-radius: 1px; }
+  .microphone .btm_ring2 {
+    width: 40px;
+    height: 12px;
+    background-image: -webkit-repeating-linear-gradient(left, #929191, #eaeaea 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+    background-image: -o-repeating-linear-gradient(left, #929191, #eaeaea 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+    background-image: repeating-linear-gradient(to right, #929191, #eaeaea 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+    position: absolute;
+    bottom: -17px;
+    left: 50%;
+    margin-left: -20px;
+    border-radius: 1px; }
+  .microphone .rpad, .microphone .lpad {
+    width: 6px;
+    height: 30px;
+    background-image: -webkit-repeating-linear-gradient(bottom, #929191, #eaeaea 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+    background-image: -o-repeating-linear-gradient(bottom, #929191, #eaeaea 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+    background-image: repeating-linear-gradient(to top, #929191, #eaeaea 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+    position: absolute;
+    top: 54%;
+    right: -4px;
+    border-top-left-radius: 2px 13px;
+    border-bottom-left-radius: 2px 13px; }
+    .microphone .rpad .arm, .microphone .lpad .arm {
+      width: 7px;
+      height: 137px;
+      background-image: -webkit-repeating-linear-gradient(left, #929191, #eaeaea 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+      background-image: -o-repeating-linear-gradient(left, #929191, #eaeaea 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+      background-image: repeating-linear-gradient(to right, #929191, #eaeaea 32%, #f7f6f2 42%, #f7f6f2 58%, #929191 100%);
+      position: absolute;
+      top: -30%;
+      right: -6px;
+      border-radius: 2px; }
+    .microphone .rpad .nut, .microphone .lpad .nut {
+      width: 14px;
+      height: 37px;
+      background-image: -webkit-repeating-linear-gradient(bottom, #929191, #eaeaea 6%);
+      background-image: -o-repeating-linear-gradient(bottom, #929191, #eaeaea 6%);
+      background-image: repeating-linear-gradient(to top, #929191, #eaeaea 6%);
+      position: absolute;
+      top: -11%;
+      right: -21px;
+      border-radius: 2px; }
+      .microphone .rpad .nut:before, .microphone .lpad .nut:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 2px;
+        height: 20px;
+        -webkit-box-shadow: -1px -10px 3px 0px black;
+        box-shadow: -1px -10px 3px 0px black;
+        z-index: -1; }
+      .microphone .rpad .nut:after, .microphone .lpad .nut:after {
+        content: '';
+        position: absolute;
+        left: 7px;
+        top: 9%;
+        width: 10px;
+        height: 30px;
+        background: #a2a29f;
+        z-index: -1;
+        border-top-right-radius: 20px 50px;
+        border-bottom-right-radius: 20px 50px; }
+  .microphone .lpad {
+    top: 54%;
+    left: -4px;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+  .microphone .rack {
+    width: 122px;
+    height: 48px;
+    background: #585A59;
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    margin-left: -61px;
+    z-index: -1; }
 
 .pp {
   position: absolute;
