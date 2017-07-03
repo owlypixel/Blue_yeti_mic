@@ -583,13 +583,33 @@ body {
     transform: rotateY(180deg); }
   .microphone .rack {
     width: 122px;
-    height: 48px;
+    height: 165px;
     background: #585A59;
+    background-image: -webkit-repeating-linear-gradient(left, #585A59, #bfbcbc 32%, #d2d2d1 42%, #bfbfbc 58%, #585A59 100%);
+    background-image: -o-repeating-linear-gradient(left, #585A59, #bfbcbc 32%, #d2d2d1 42%, #bfbfbc 58%, #585A59 100%);
+    background-image: repeating-linear-gradient(to right, #585A59, #bfbcbc 32%, #d2d2d1 42%, #bfbfbc 58%, #585A59 100%);
     position: absolute;
-    bottom: -40px;
+    bottom: -155px;
     left: 50%;
     margin-left: -61px;
     z-index: -1; }
+  .microphone .lmask {
+    width: 36px;
+    height: 25px;
+    background: white;
+    position: absolute;
+    bottom: -65px;
+    left: -8px;
+    z-index: -1;
+    border-top-right-radius: 75px 100px;
+    border-bottom-right-radius: 75px 100px; }
+    .microphone .lmask:after {
+      content: '';
+      position: absolute;
+      width: 36px;
+      height: 104px;
+      bottom: -91px;
+      background: white; }
 
 .pp {
   position: absolute;
