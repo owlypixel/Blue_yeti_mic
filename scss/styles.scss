@@ -179,9 +179,9 @@ body {
 		bottom: -155px;
 		left: 50%;
 		margin-left: -.5*122px;
-		z-index: -1;
+		z-index: -3;
 	}
-	.lmask{
+	.lmask, .rmask{
 		width: 36px;
 		height: 25px;
 		background: white;
@@ -190,15 +190,55 @@ body {
 		left: -8px;
 		z-index: -1;
 		border-top-right-radius: 75px 100px; 
-		border-bottom-right-radius: 75px 100px; 
+		border-bottom-right-radius: 61px 47px; 
+	}
+	.lmask2, .rmask2{
+		position: absolute;
+		width: 36px;
+		height: 104px;
+		bottom: -169px;
+		left: -6px;
+		background: white;
+	}
+	.rmask{
+		left: 76%;
+		transform: rotateY(180deg);
+	}
+	.rmask2{
+		left: 76%;
+	}
+	.lleg, .rleg{
+		width: 30px;
+		height: 40px;
+		background-image: repeating-linear-gradient(to right, #6b6c6b,  #b7b4b4 100%);
+		position: absolute;
+		bottom:  -103px;
+		border-top-left-radius: 41px 58px;
 		&:after{
 			content: '';
 			position: absolute;
-			width: 36px;
-			height: 104px;
-			bottom: -91px;
-			background: white;
-		}
+			width: 0px;
+			height: 74px;
+			background: transparent;
+			top: -14px;
+			box-shadow:  2px 34px 3px 1px rgba(255,255,255,1);
+			z-index: 3;
+		} 
+	}
+	.lleg2, .rleg2{
+		position: absolute;
+		width: 30px;
+		height: 53px;
+		bottom: -52px;
+		background-image: repeating-linear-gradient(to right, #6b6c6b,  #b7b4b4 100%);
+	}
+	.rleg{
+		left: 76%;
+		transform: rotateY(180deg);
+		background-image: repeating-linear-gradient(to right, #636564, #979896 100%);
+	}
+	.rleg2{
+		background-image: repeating-linear-gradient(to right, #636564, #979896 100%);
 	}
 }
 

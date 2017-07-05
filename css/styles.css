@@ -592,8 +592,8 @@ body {
     bottom: -155px;
     left: 50%;
     margin-left: -61px;
-    z-index: -1; }
-  .microphone .lmask {
+    z-index: -3; }
+  .microphone .lmask, .microphone .rmask {
     width: 36px;
     height: 25px;
     background: white;
@@ -602,14 +602,58 @@ body {
     left: -8px;
     z-index: -1;
     border-top-right-radius: 75px 100px;
-    border-bottom-right-radius: 75px 100px; }
-    .microphone .lmask:after {
+    border-bottom-right-radius: 61px 47px; }
+  .microphone .lmask2, .microphone .rmask2 {
+    position: absolute;
+    width: 36px;
+    height: 104px;
+    bottom: -169px;
+    left: -6px;
+    background: white; }
+  .microphone .rmask {
+    left: 76%;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+  .microphone .rmask2 {
+    left: 76%; }
+  .microphone .lleg, .microphone .rleg {
+    width: 30px;
+    height: 40px;
+    background-image: -webkit-repeating-linear-gradient(left, #6b6c6b, #b7b4b4 100%);
+    background-image: -o-repeating-linear-gradient(left, #6b6c6b, #b7b4b4 100%);
+    background-image: repeating-linear-gradient(to right, #6b6c6b, #b7b4b4 100%);
+    position: absolute;
+    bottom: -103px;
+    border-top-left-radius: 41px 58px; }
+    .microphone .lleg:after, .microphone .rleg:after {
       content: '';
       position: absolute;
-      width: 36px;
-      height: 104px;
-      bottom: -91px;
-      background: white; }
+      width: 0px;
+      height: 74px;
+      background: transparent;
+      top: -14px;
+      -webkit-box-shadow: 2px 34px 3px 1px white;
+      box-shadow: 2px 34px 3px 1px white;
+      z-index: 3; }
+  .microphone .lleg2, .microphone .rleg2 {
+    position: absolute;
+    width: 30px;
+    height: 53px;
+    bottom: -52px;
+    background-image: -webkit-repeating-linear-gradient(left, #6b6c6b, #b7b4b4 100%);
+    background-image: -o-repeating-linear-gradient(left, #6b6c6b, #b7b4b4 100%);
+    background-image: repeating-linear-gradient(to right, #6b6c6b, #b7b4b4 100%); }
+  .microphone .rleg {
+    left: 76%;
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background-image: -webkit-repeating-linear-gradient(left, #636564, #979896 100%);
+    background-image: -o-repeating-linear-gradient(left, #636564, #979896 100%);
+    background-image: repeating-linear-gradient(to right, #636564, #979896 100%); }
+  .microphone .rleg2 {
+    background-image: -webkit-repeating-linear-gradient(left, #636564, #979896 100%);
+    background-image: -o-repeating-linear-gradient(left, #636564, #979896 100%);
+    background-image: repeating-linear-gradient(to right, #636564, #979896 100%); }
 
 .pp {
   position: absolute;
