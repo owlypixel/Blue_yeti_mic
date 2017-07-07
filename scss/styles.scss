@@ -176,7 +176,7 @@ body {
 		background: #585A59;
 		background-image: repeating-linear-gradient(to right, #585A59, #bfbcbc 32%, #d2d2d1 42%, #bfbfbc 58%, #585A59 100%);
 		position: absolute;
-		bottom: -155px;
+		bottom: -151px;
 		left: 50%;
 		margin-left: -.5*122px;
 		z-index: -3;
@@ -195,8 +195,8 @@ body {
 	.lmask2, .rmask2{
 		position: absolute;
 		width: 36px;
-		height: 104px;
-		bottom: -169px;
+		height: 86px;
+		bottom: -151px;
 		left: -6px;
 		background: white;
 	}
@@ -239,6 +239,31 @@ body {
 	}
 	.rleg2{
 		background-image: repeating-linear-gradient(to right, #636564, #979896 100%);
+	}
+	.mask3{
+		width: 60px;
+		height: 60px;
+		position: absolute;
+		bottom: -155px;
+		left: 50%;
+		margin-left: -.5*60px;
+		background: white;
+		border-top-left-radius: 30px;
+		border-top-right-radius: 30px;
+		box-shadow: 0px -4px 1px 2px #9b9c9a, 0px -7px 3px 0px white,  inset 0px -7px 1px -1px #a8aaa7 ;
+	}
+	.stand{
+		width: 140px;
+		height: 12px;
+		position: absolute;
+		left: 50%;
+		border-radius: 50%;
+		margin-left: -.5*140px;
+		background: #a8aaa7;
+		bottom: -160px;
+		z-index: -1;
+
+
 	}
 }
 
