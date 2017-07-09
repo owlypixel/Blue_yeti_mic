@@ -4,56 +4,66 @@
 	<meta charset="UTF-8">
 	<title>Blue Yeti Microphone CSS</title>
 	<link rel="stylesheet" href="css/styles.css">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet"> -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet"> -->
-	<!-- <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"> -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
 </head>
 <body>
-	<div class="wrapper">
-		<div class="microphone">
-			<div class="head"></div>
-			<div class="ring">
-				<div class="shadow_1"></div>
-				<div class="shadow_2"></div>
-				<div class="shadow_3"></div>
-				<div class="shadow_4"></div>
-				<div class="shadow_5"></div>
-				<div class="shadow_6"></div>
+	<div class="holder">
+		<div class="circle">
+			<div class="inner-circle"></div>
+		</div>
+		<div class="wrapper">
+			<div class="microphone">
+				<div class="head"></div>
+				<div class="ring"></div>
+				<div class="mute-btn">
+					<span class="text-mute">MUTE</span>
+					<div class="led"></div>
+				</div>
+				<div id="volume" class="volume-knob">
+					<div class="knob-inner1"></div>
+					<div class="knob-inner2"></div>
+				</div>
+				<div class="volume-label">VOLUME</div>
+				<div class="btm_ring1"></div>
+				<div class="btm_ring2"></div>
+				<div class="rpad">
+					<div class="arm"></div>
+					<div class="nut"></div>
+				</div>
+				<div class="lpad">
+					<div class="arm"></div>
+					<div class="nut"></div>
+				</div>
+				<div class="rack"></div>
+				<div class="lmask"></div>
+				<div class="lmask2"></div>
+				<div class="rmask"></div>
+				<div class="rmask2"></div>
+				<div class="lleg">
+					<div class="lleg2"></div>
+				</div>
+				<div class="rleg">
+					<div class="rleg2"></div>
+				</div>
+				<div class="mask3"></div>
+				<div class="mask4"></div>
+				<div class="stand"></div>
+				<div class="stand-dn"></div>
+				<div class="stand-dn2"></div>
+				<div class="stand-ring"></div>
+				<div class="stand-mid"></div>
+				<div class="stand-btm"></div>
 			</div>
-			<div class="btm_ring1"></div>
-			<div class="btm_ring2"></div>
-			<div class="rpad">
-				<div class="arm"></div>
-				<div class="nut"></div>
+			<div class="headline">
+				<span>Blue</span>
+				<span>Yeti</span>
 			</div>
-			<div class="lpad">
-				<div class="arm"></div>
-				<div class="nut"></div>
-			</div>
-			<div class="rack"></div>
-			<div class="lmask"></div>
-			<div class="lmask2"></div>
-			<div class="rmask"></div>
-			<div class="rmask2"></div>
-			<div class="lleg">
-				<div class="lleg2"></div>
-			</div>
-			<div class="rleg">
-				<div class="rleg2"></div>
-			</div>
-			<div class="mask3"></div>
-			<div class="mask4"></div>
-			<div class="stand"></div>
-			<div class="stand-dn"></div>
-			<div class="stand-dn2"></div>
-			<div class="stand-ring"></div>
-			<div class="stand-mid"></div>
-			<div class="stand-btm"></div>
 		</div>
 	</div>
 
-	<img class="pp" src="assets/yeti_mic_thin.jpg" height="500px"  alt="">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/utils/Draggable.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>
