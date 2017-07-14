@@ -12,6 +12,7 @@ You can play around and experiment with it [here](https://codepen.io/owlypixel/p
 
 ### CSS
 - Using linear gradients as backgrounds to create realistically looking objects
+- Rounding corners using arc of ellipse
 - Absolute positioning practice
 
 ## Copyright & License
